@@ -1,0 +1,113 @@
+:root{
+    --commoncolor: #290916
+}
+*{margin: 0px;padding: 0px;}
+
+section{
+    height: 100vh;
+    width: 98.7vw;
+    /* background-color: blueviolet; */
+}
+
+.fixed {position: fixed;top:0; left:0;width: 100%; background: var(--darkgreen);}
+
+
+/* Home Section */
+
+/* Navigation Bar */
+
+#navbar nav{
+    padding-top: 3vh;
+    background-color: var(--commoncolor);
+    width: 98.7vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar nav ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar .logo{
+    padding-left: 5vh;
+    color: white;
+}
+
+#navbar nav ul li{
+    padding: 0vh 5vh;
+}
+
+#navbar nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Home body */
+
+.container{
+    height: 70vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin: 8vh 18vh;
+}
+
+.container .infocontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .infocontainer .devinfo{
+    /* background-color: pink; */
+}
+
+.container .infocontainer .devinfo .hello{
+    font-size: 4vw;
+}
+.container .infocontainer .devinfo .name{
+    font-size: 7vw;
+}
+.container .infocontainer .devinfo .about{
+    font-size: 3vw;
+}
+.container .infocontainer .devinfo .moreabout{
+    padding: 30px 0px;
+}
+
+.container .infocontainer .devinfo button{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    background-color:var(--commoncolor) ;
+    color: white;
+    border-radius: 10px;
+    width: 160px;
+}
+
+.container .infocontainer .devinfo button:hover{
+    animation-name: btnAnime;
+}
+
+
+.container .infocontainer .devpic img{
+    height: 70vh;
+    margin-left: 100px;
+}
+
+
+
+#socialMedia ul{
+    display: flex;
+    list-style: none;
+}
+
+#socialMedia img{
+    margin: 1vh 4vh 4vh; 
+    border-radius: 10px;
+    height: 7vh;
+    width: 7vh;
+    
+}
+

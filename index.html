@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section id="home">
+        <div id="navbar">
+            <nav >
+                <h2 class="logo">Aditya Verma</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Intro</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Reach Me</a></li>
+                    <li><a href="#">Acievements</a></li>
+                    <!-- <li><a href="/pages/blog.html">Acievements</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="hello">Hi! I am</div>
+                    <div class="name">Aditya Verma</div>
+                    <div class="about">Developer, Drummer</div>
+                    <div class="moreabout">I am pursuing Bachelors of technology in Computer Science from Ajay Kumar Garg Engineering College Ghaziabad. Please Have look At my Prohile Through Following Links. <br>Enjoy</div>
+                    <div id="socialMedia">
+                        <ul>
+                            <li><a href="https://twitter.com/Adityavarm3215" target="_blank"><img src="icons/twitter-icon.png"></a></li>
+                            <li><a href="https://www.instagram.com/a_aditya_verma_a/?next=%2F" target="_blank"><img src="icons/inst-icon.png"></a></li>
+                            <li><a href="https://www.linkedin.com/in/adityaverma3215/" target="_blank"><img src="icons/linkedIn-icon.png"></a></li>
+                        </ul>
+                    </div>
+                    <div class="buttons">
+                        <a href="cv.txt"><button>Download Resume</button></a>
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+                <div class="devpic"><img src="profile2.jpg" al></div>
+
+            </div>
+        </div>
+    </section>
+    <section id="Introduction">
+
+    </section>
+
+    <!-- For making navigation bar fixed -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    
+    <script type="text/javascript">
+        $(window).scroll(function(){
+    var navbar = $('.sticky'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 100) navbar.addClass('fixed');
+    else navbar.removeClass('fixed');
+    });
+    </script>
+
+</body>
+
+</html>
