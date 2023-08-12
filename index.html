@@ -5,68 +5,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" type="text/css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <section id="home">
-        <div id="navbar">
-            <nav >
+        <div id="navbar" class="sticky">
+            <nav>
                 <h2 class="logo">Aditya Verma</h2>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Reach Me</a></li>
-                    <li><a href="#">Acievements</a></li>
+                    <li><a href="#Introduction">Intro</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Acievements</a></li>
                     <!-- <li><a href="/pages/blog.html">Acievements</a></li> -->
                 </ul>
+
             </nav>
         </div>
-        <div class="container">
+        <div class="homecontainer">
 
             <div class="infocontainer">
                 <div class="devinfo">
                     <div class="hello">Hi! I am</div>
-                    <div class="name">Aditya Verma</div>
+                    <div class="name">Aditya Verma</div><br>
                     <div class="about">Developer, Drummer</div>
-                    <div class="moreabout">I am pursuing Bachelors of technology in Computer Science from Ajay Kumar Garg Engineering College Ghaziabad. Please Have look At my Prohile Through Following Links. <br>Enjoy</div>
+                    <div  class="moreabout">Pursuing Bachelors of technology in Computer Science from Ajay Kumar
+                        Garg Engineering College Ghaziabad.</div>
                     <div id="socialMedia">
                         <ul>
-                            <li><a href="https://twitter.com/Adityavarm3215" target="_blank"><img src="icons/twitter-icon.png"></a></li>
-                            <li><a href="https://www.instagram.com/a_aditya_verma_a/?next=%2F" target="_blank"><img src="icons/inst-icon.png"></a></li>
-                            <li><a href="https://www.linkedin.com/in/adityaverma3215/" target="_blank"><img src="icons/linkedIn-icon.png"></a></li>
+                            <li><a href="https://twitter.com/Adityavarm3215" target="_blank"><img
+                                        src="icons/twitter-icon.png"></a></li>
+                            <li><a href="https://www.instagram.com/a_aditya_verma_a/?next=%2F" target="_blank"><img
+                                        src="icons/inst-icon.png"></a></li>
+                            <li><a href="https://www.linkedin.com/in/adityaverma3215/" target="_blank"><img
+                                        src="icons/linkedIn-icon.png"></a></li>
                         </ul>
                     </div>
                     <div class="buttons">
-                        <a href="cv.txt"><button>Download Resume</button></a>
-                        <button>Contact Me</button>
+                        <a href="WD Resume.pdf" target="_blank"><button>Download Resume</button></a>
+                        <!-- <button>Contact Me</button> -->
                     </div>
                 </div>
-                <div class="devpic"><img src="profile2.jpg" al></div>
+                <img id="devpic" src="personal-id.png">
 
             </div>
         </div>
     </section>
+    <!-- About Page -->
     <section id="Introduction">
+        <div class="spaceContainer">
+            <h1></h1>
+        </div>
+        <h1 id="SectionHeading">About Me</h1>
+        <div class="introContainer">
+            <div class="photo">
+                <img src="profile2.jpg">
+            </div>
+            <div class="about">
+                <p>I'm Aditya Verma, an <span style="text-decoration: underline;">Android Developer</span> pursuing
+                    Bachelors of Technology in Computer Science from <span style="text-decoration: underline;">Ajay
+                        Kumar Garg Engineering College, Ghaziabad</span>. </p>
+                <br>
+                <p>These days my time is spent in practising <span style="text-decoration: underline;">Data Structure
+                        and Algorithm Quesions</span>.Also I am Learning Backend Development using NodeJS, ExpressJS and
+                    MongoDB and looking forward For building a full Stack Android Application.</p>
+                <br>
+                <p>I have Completed my Schooling in year 2020 From The Doon valley Public school,Deoband where I scored
+                    <span style="text-decoration: underline;">92.8% in 10th</span> and <span
+                        style="text-decoration: underline">93.4% in 12th</span>.</p>
+                <br>
+                <P>Apart from Technical feild, I have great Interest in Making Paintings, Listening Music And playing
+                    Drums.Also I'm a member of Music Society of My College named Euphony.</P>
+            </div>
 
+        </div>
+    </section>
+    <!-- Skills Page -->
+    <section id="skills">
+        <div class="spaceContainer">
+            <h1></h1>
+        </div>
+        <div class="WhatiDo">
+            <h1 id="SectionHeading">My Skills</h1>
+            <div class="skillCard">
+                <div class="innercontainer">
+                    <div class="row">
+                        <div class="element">
+                            <h1>Android Developer</h1>
+                            <ul>
+                                <li>Flutter</li>
+                                <li>Firebase</li>
+                                <li>Firestore</li>
+                            </ul>
+
+                        </div>
+                        <div class="element">
+                            <h1>Web Development</h1>
+                            <ul>
+                                <li>HTML,CSS,JS</li>
+                                <li>NodeJS</li>
+                                <li>ExpressJS</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="element">
+                            <h1>Programming</h1>
+                            <ul>
+                                <li>Data Structure & Algorithm</li>
+                                <li>Problem solving</li>
+
+                            </ul>
+                        </div>
+                        <!-- <div class="element">
+                            <h1>Subjects</h1>
+                            <ul>
+                                <li>Computer Networks</li>
+                            <li>Operating System</li>
+                            <li>Databasse Management</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Software Management</li>
+                            </ul>
+                        </div> -->
+
+                        <div class="element">
+                            <h1>Languages</h1>
+                            <ul>
+                                <li>C++/C</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="iconsContainer">
+                        <ul>
+                            <li><img src="icons/Flutter.png" alt="flutter"></li>
+                            <li><img src="icons/firebase.png" alt="firebase"></li>
+                            <li><img src="icons/firestore.png" alt="firestore"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="icons/htnl.png" alt="html"></li>
+                            <li><img src="icons/js.png" alt="Js"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="icons/css.png" alt="css"></li>
+                            <li><img src="icons/nodejs.jpg"></li>
+                            <li><img src="icons/expressjs.png"></li>
+                            <li><img src="icons/mongodb.png"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="icons/dsa.png"></li>
+                            <li><img src="icons/problemSolving.png" ></li>
+                            <li><img src="icons/c++.png" ></li>
+                        </ul>
+                        <ul>
+                            <li><img src="icons/java.png"></li>
+                            <li><img src="icons/python.png" ></li>
+                            <li><img src="icons/c.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Projects Page -->
+    <section id="projects">
+        <div class="spaceContainer">
+            <h1></h1>
+        </div>
+        <div class="WhatiDo">
+            <h1 id="SectionHeading">My Projects</h1>
+            <div class="skillCard">
+                <div class="work">
+                    <a href="https://github.com/AdityaVerma32/We-Chat" target="_blank">
+                        <h2>We Chat </h2>
+                        <ul>
+                            <li>Login Using Goole Account</li>
+                            <li>Online & Offline Status</li>
+                            <li>Send Text Messages and Images</li>
+                            <li>Push Notification</li>
+                            <li>Updating Profile Picture and Details</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="https://github.com/AdityaVerma32/Weather-WEBAPP" target="_blank">
+                        <h2>Weather-WEBAPP </h2>
+                        <ul>
+                            <li>Realtime Weather Updates</li>
+                            <li>Use of Open weather API</li>
+                            <li>NodeJS As Backend</li>
+                            <li>HTML,CSS And JavaScript For Frontend</li>
+                            <li>Responsive Website</li>
+
+                        </ul>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="https://github.com/AdityaVerma32/E-Commerce-App" target="_blank">
+                        <h2>E Commerce App</h2>
+                        <ul>
+                            <li>Flutter Android Application</li>
+                            <li>State Management using GetX Package</li>
+                            <li>Responsive Application</li>
+                            <li>Incomplete...</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Achievement Page -->
+    <section id="achievements">
+        <div class="spaceContainer"></div>
+        <div class="WhatiDo">
+            <h1 id="SectionHeading">Achievements & Certifications</h1>
+            <div class="certificates">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <div>
+                                <h4>Java Language</h4><a href="Java-cert.pdf" target="_blank"><i
+                                        class="fa-solid fa-download"> Certificate</i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>Flutter Development BootCamp</h4><a href="Flutter-cert.pdf" target="_blank"><i
+                                        class="fa-solid fa-download"> Certificate</i></a>
+                            </div>
+                        </li>
+                        <li>Solved More than 500 Questions on Diffrent Platforms</li>
+                        <li>Took Part in Hacktober fest 2K22 and successfully Merged 4 git Requests</li>
+                        <li>Completed 1 Milestone On Google Cloud Ready Facilitator and
+                            Earned Swags</li>
+                        <li>Completed No code November and Google Arcade 2022 and Earned
+                            Google Swags</li>
+                    </ul>
+                </div>
+                <img src="achievement.gif" alt="">
+            </div>
+        </div>
     </section>
 
-    <!-- For making navigation bar fixed -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-    
-    <script type="text/javascript">
-        $(window).scroll(function(){
-    var navbar = $('.sticky'),
-        scroll = $(window).scrollTop();
-
-    if (scroll >= 100) navbar.addClass('fixed');
-    else navbar.removeClass('fixed');
-    });
-    </script>
 
 </body>
 

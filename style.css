@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&family=Press+Start+2P&family=Source+Code+Pro:wght@300&display=swap');
+
 :root{
-    --commoncolor: #290916
+    --deeppurple: #290916;
+    --lightpurple: #ffeef5;
+    --bgcolor:#cd90a9;
+    --listFont: 1rem;
+    --headingfont: 6vh;
+    --descfont:1.2rem;
+    --paragraphfont:'Source Code Pro', monospace;
+    --gamingfont:'Press Start 2P', cursive;
+    --heading:'Encode Sans SC', sans-serif;
+
+    /* Frst Media Query */
+    --descfont1:1rem;
 }
 *{margin: 0px;padding: 0px;}
 
@@ -9,20 +22,57 @@ section{
     /* background-color: blueviolet; */
 }
 
-.fixed {position: fixed;top:0; left:0;width: 100%; background: var(--darkgreen);}
+#SectionHeading{
+    font-size: var(--headingfont);
+    display: flex;
+    justify-content: center;
 
+    font-family: var(--heading);    
+    font-weight: bold;
+}
+
+/* 
+.homecontainer .infocontainer .devpic::before{
+    content: "";
+    position: absolute;
+    transform: rotate(31deg);
+    height: 440px;
+    width: 320px;
+    height: 69vh;
+    width: 26vw;
+    top: 22vh;
+    left: 61vw;
+    border-radius: 41px;
+    background-color: var(--deeppurple);
+} */
+
+.spaceContainer{
+    height: 8vh;
+    /* background-color:aqua; */
+
+}
 
 /* Home Section */
 
+
+
+
 /* Navigation Bar */
+
+#home .sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 #navbar nav{
     padding-top: 3vh;
-    background-color: var(--commoncolor);
+    background-color: var(--deeppurple);
     width: 98.7vw;
     height: 7vh;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 #navbar nav ul{
@@ -33,71 +83,91 @@ section{
 #navbar .logo{
     padding-left: 5vh;
     color: white;
-}
-
-#navbar nav ul li{
-    padding: 0vh 5vh;
+    font-size: 4vh;
+    font-family: var(--gamingfont);
 }
 
 #navbar nav ul li a{
     color: white;
+    font-family: var(--heading);
+    padding: 1vh 2rem;
+    border-radius: 30vh;
     text-decoration: none;
+    font-size: var(--listFont);
+}
+
+#navbar nav ul li a:hover{
+    color: var(--deeppurple);
+    background-color: white;
+
 }
 
 /* Home body */
 
-.container{
-    height: 70vh;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    margin: 8vh 18vh;
+#home{
+    position: relative;
+}
+#home::before{
+    content: '';
+    background-image: url('bgimage.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    opacity: .2;
+    width: 98.7vw;
 }
 
-.container .infocontainer{
+.homecontainer{
+    height: 50rem;
+    /* background-color: yellow; */
+    /* display: flex;
+    justify-content: center; */
+    margin: 4rem 0rem 0rem 4rem;
+}
+
+.homecontainer .infocontainer{
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
 }
-
-.container .infocontainer .devinfo{
-    /* background-color: pink; */
+.homecontainer .infocontainer .devinfo .hello{
+    font-size: 3.5rem;
+    font-family: var(--paragraphfont);    
+    font-weight: bold;
+}
+.homecontainer .infocontainer .devinfo .name{
+    font-size: 5rem;
+    font-family: var(--paragraphfont);    
+    font-weight: bold;
+}
+.homecontainer .infocontainer .devinfo .about{
+    font-size: 2rem;
+    font-family: var(--paragraphfont);    
+    font-weight: bold;
+}
+.homecontainer .infocontainer .devinfo .moreabout{
+    padding: 1rem 0px;
+    font-family: var(--paragraphfont);    
+    font-weight: bold;
+    font-size: var(--listFont);
 }
 
-.container .infocontainer .devinfo .hello{
-    font-size: 4vw;
-}
-.container .infocontainer .devinfo .name{
-    font-size: 7vw;
-}
-.container .infocontainer .devinfo .about{
-    font-size: 3vw;
-}
-.container .infocontainer .devinfo .moreabout{
-    padding: 30px 0px;
-}
-
-.container .infocontainer .devinfo button{
+.homecontainer .infocontainer .devinfo button{
     padding: 10px;
-    font-size: 15px;
-    margin-right: 20px;
-    background-color:var(--commoncolor) ;
+    font-size: var(--listFont);
+    font-weight: bold;
+    margin-top: 1rem;
+    background-color:var(--deeppurple) ;
     color: white;
     border-radius: 10px;
-    width: 160px;
+    width: 200px;
+    font-family: var(--heading);
 }
-
-.container .infocontainer .devinfo button:hover{
-    animation-name: btnAnime;
+#devpic{
+    height: 34rem;
+    margin: 0rem 2rem
 }
-
-
-.container .infocontainer .devpic img{
-    height: 70vh;
-    margin-left: 100px;
-}
-
-
-
 #socialMedia ul{
     display: flex;
     list-style: none;
@@ -108,6 +178,465 @@ section{
     border-radius: 10px;
     height: 7vh;
     width: 7vh;
+    transition: width 0.1s,height 0.1s;
+    transition-timing-function: linear;  
+}
+
+#socialMedia img:hover{
+    height: 9vh;
+    width: 9vh; 
+}
+
+
+
+/* introduction Page */
+
+#Introduction{
+    position: relative;
+}
+#Introduction::before{
+    content: '';
+    background: var(--bgcolor);
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    opacity: .5;
+    width: 98.7vw;
+}
+
+.introContainer{
+    /* background-color: grey; */
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    margin: 0vw 4vw 0vw 4vw;
+}
+
+#Introduction .about{
+    padding-top: 3rem;
+}
+
+#Introduction .about p{
+    font-size: var(--descfont);
+    font-family: var(--paragraphfont);    
+    font-weight: bold;
+}
+
+#Introduction .introContainer .photo img{
+    height: 30rem;
+    margin-right: 3rem;
+}
+
+/* Skills Section */
+
+#skills{
+    position: relative;
+}
+#skills::before{
+    content: '';
+    background: var(--bgcolor);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+    opacity: .4;
+    width: 98.7vw;
+    display: block;
+}
+
+.WhatiDo{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.WhatiDo ul{
+    padding: 0.6rem 2rem;
+    list-style:disc;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: var(--paragraphfont);    
+    font-weight:500;
+}
+
+.WhatiDo .skillCard{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skills .WhatiDo .skillCard .innercontainer{
+    width: 60vw;
+}
+
+
+#skills .WhatiDo .skillCard .innercontainer .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#skills .WhatiDo .skillCard .row .element{
+    box-shadow: 10px 10px 10px var(--deeppurple);
+    border-radius: 20px;
+    height: 25vh;
+    width: 12vw;
+    margin: 1vh;
+    padding: 2vh;
+    background-color: var(--lightpurple);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: var(--listFont);
+
+}
+
+#skills .WhatiDo .skillCard .row h1{
+    font-size: var(--descfont);  
+    font-family: var(--heading);  
+    padding-bottom: 0.7rem;
+}
+#iconsContainer{
+    background-color: var(--deeppurple);
+    height: 26rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin-right: 5rem;
+}
+#iconsContainer ul{
+    padding: 0.8rem 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#iconsContainer img{
+    width: 3rem;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Projects Page */
+
+#projects{
+    position: relative;
+}
+#projects::before{
+    content: '';
+    background: var(--bgcolor);
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    opacity: .5;
+    width: 98.7vw;
+}
+#projects .WhatiDo .skillCard a{
+    text-decoration: none;
+     color: var(--deeppurple); 
+}
+
+#projects .WhatiDo .skillCard a:hover{
+    text-decoration: none;
+     color: white; 
+}
+
+#projects .WhatiDo .skillCard .work{
+    box-shadow: 10px 10px 10px var(--deeppurple);
+    margin: 4vh 2rem;
+    padding: 1.8rem 2rem;
+    background-color: var(--lightpurple);
+    height: 50vh;
+    width: 18rem;
+    border-radius: 20px;
+   
+}
+
+#projects .WhatiDo .skillCard .work:hover{
+    background-color: var(--deeppurple);
+    text-decoration: white;
+}
+
+#projects .WhatiDo .skillCard .work h2{
+    font-size: 3.5vh;
+    font-family: var(--heading);    
+    font-weight: bold;
+
+}
+
+#projects .WhatiDo .skillCard .work ul{
+    list-style:square;
+}
+
+#projects .WhatiDo .skillCard .work ul li{
+    padding: 2vh 0.5vw;
+    font-family: var(--paragraphfont);    
+    font-weight: bold;
+font-size: var(--listFont);}
+
+/* Acievement section */
+
+#achievements{
+    position: relative;
+}
+#achievements::before{
+    content: '';
+    background: var(--bgcolor);
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    opacity: .3;
+    width: 98.7vw;
+}
+
+#achievements .certificates{
+    display: flex;
+    padding: 4vh 2rem;
+    justify-content: space-between;
+
+}
+#achievements .certificates .list{
+    padding: 2vh 2vw 0vw 0vw;
+
+    /* background-color: #cd90a9; */
+}
+#achievements .certificates .list div{
+ display: flex;
+}
+#achievements .certificates ul li{
+    list-style: decimal;
+    font-size: var(--descfont);
+    font-weight: 7;
+    padding-bottom: 4vh;
+    font-family: var(--paragraphfont);    
+
+}
+
+#achievements .certificates .list a{
+    padding:  0rem 1rem;
+    color: black;
     
 }
 
+#achievements .certificates img{
+    height: 27rem;    
+    width: 24rem;
+    border-radius: 10vh;
+}
+
+
+
+
+
+
+@media screen and (max-width:1225px) {
+    .homecontainer .infocontainer .devinfo .hello{
+        font-size: 3rem;
+    }
+    .homecontainer .infocontainer .devinfo .name{
+        font-size: 4rem;
+    }
+    .homecontainer .infocontainer .devinfo .about{
+        font-size: 1.3rem;
+    }
+    #Introduction .about p{
+        font-size: var(--descfont1);
+        
+    }
+    #Introduction .introContainer .photo img{
+        height: 26rem;
+        /* background-color: black; */
+        margin-right: 5vw;
+    
+    }
+   
+
+    #skills .WhatiDo .skillCard .innercontainer .row .element{
+        width: 9rem;
+    }
+    #skills .WhatiDo .skillCard .innercontainer{
+        width: 40rem;
+    }
+    #iconsContainer{
+        width: 18rem;
+        margin-right: 2rem;
+    }
+    #iconsContainer ul{
+        padding: 1.1rem 1.7rem;
+    }
+    
+    #iconsContainer img{
+        width: 2.5rem;
+    }
+    /* Project Section */
+    #projects .WhatiDo .skillCard .work{
+        margin: 4vh 1rem;
+        padding: 1.2rem 0.8rem;
+        height: 20rem;
+        width: 18rem;
+    }
+
+    #projects .WhatiDo .skillCard .work h2{
+        font-size: 1.4rem;
+    }
+      
+    #projects .WhatiDo .skillCard .work ul li{
+        padding: 0.6rem 0rem;
+        font-size: 0.9rem;
+    }
+    /* Acievements Section  */  
+    #achievements .certificates .list a{
+        padding: 0.3rem 1rem;
+        color: red;
+        font-size: 1rem;
+    }
+    
+    #achievements .certificates img{
+        height: 20rem;    
+        width: 15rem;
+        border-radius: 10vh;
+    }
+         
+}
+
+@media screen and (max-width:830px) {
+    #navbar nav ul li{
+        display: none;
+    }
+    #Introduction .about p{
+        font-size: 0.9rem;
+        
+    }
+    #devpic{
+        display: none;
+    }
+    #Introduction .introContainer .photo img{
+        height: 23rem;
+        margin-right: 3rem;
+    }
+    #achievements .certificates .list a{
+        padding: 0.2rem 1rem;
+        color: green;
+        font-size: 0.8rem;
+    }
+    #achievements .certificates ul li{
+        font-size: 0.9rem;
+        padding: 1rem 0.9rem;
+    }
+    #iconsContainer{
+        display: none;
+    }
+    
+    #achievements .certificates img{
+        display: none;
+    }
+    
+    #skills .WhatiDo .skillCard .row .element{
+        width: 18rem;
+    }
+    #projects .WhatiDo .skillCard .work ul li{
+        display: none;
+    }
+    #projects .WhatiDo .skillCard .work{
+        padding: 0rem;
+        margin: 4vh 0rem;
+        height: 10rem;
+        width: 10rem;
+    }
+    #projects .WhatiDo .skillCard .work h2{
+        padding-top: 3rem;
+        display: flex;
+        text-align: center;
+        justify-content:center;
+    }
+
+}
+
+@media screen and (max-width:620px) {
+    .homecontainer .infocontainer .devinfo .hello{
+        font-size: 2.7rem;
+        font-family: var(--paragraphfont);    
+        font-weight: bold;
+    }
+    .homecontainer .infocontainer .devinfo .name{
+        /* font-size: 3.6rem; */
+        font-size: 3rem;
+    }
+    .homecontainer .infocontainer .devinfo .about{
+        /* font-size: 2rem; */
+        font-size: 1.5rem;
+    }
+    .homecontainer .infocontainer .devinfo .moreabout{
+        /* padding: 2rem 0px; */
+        display: none;
+        font-weight: bold;
+    }
+    #Introduction .about p{
+        font-size: 0.9rem;
+    }
+    #SectionHeading{
+        font-size: 2rem;
+    }
+    #Introduction .introContainer .photo img{
+        display: none;
+    }
+    #achievements .certificates ul li{
+        padding: 1rem 1rem;
+        font-size: 0.8rem;
+    }
+    #achievements .certificates .list a{
+        padding: 0.2rem 1rem;
+        color: yellow;
+        font-size: 0.7rem;
+    }
+    #achievements .certificates{
+        display: flex;
+        padding: 2rem 1rem;
+        justify-content: space-between;
+    }
+    #achievements .certificates .list{
+        padding: 0rem;
+    }    
+}
+
+/* @media screen and (max-height:600px) {
+    #SectionHeading{
+        color: green;
+    }
+    #devpic{
+        height: 20rem;
+    }
+    
+    #skills .WhatiDo .skillCard .row h1{
+        font-size: 01rem;  
+        font-family: var(--heading);  
+        padding-bottom: 0.1rem;
+    }
+    #skills .WhatiDo .skillCard .row .element li{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-height:450px){
+    #SectionHeading{
+        color:red;
+    }
+    #Introduction .about{
+        padding-top: 0rem;
+    }
+    #skills .WhatiDo .skillCard .row h1{
+        font-size: 0.8rem;  
+        font-family: var(--heading);  
+        padding-bottom: 0.05rem;
+    }
+    #skills .WhatiDo .skillCard .row .element li{
+        font-size: 0.6rem;
+    }
+} */
