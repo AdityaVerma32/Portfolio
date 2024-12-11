@@ -254,7 +254,7 @@ section{
 }
 
 .WhatiDo ul{
-    padding: 0.6rem 2rem;
+    padding: 1px 8px;
     list-style:disc;
     display: flex;
     flex-direction: column;
